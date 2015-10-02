@@ -1,0 +1,24 @@
+{
+    "name": "cf/php-rule-chains-admin",
+    "description": "Aggregate processing for SQL and other type of rules",
+    "authors": [
+        {
+            "name": "James Jones",
+            "email": "jamjon3@gmail.com"
+        }
+    ],
+    "repositories": [
+        { 
+            "type":"vcs",
+            "url":"https://github.com/jamjon3/PhpRuleChains.git"
+        }
+    ],
+    "require": {
+        "cf/php-rule-chains": "dev-master"
+    },
+    "autoload": {
+        "psr-4" : {
+            "CF\\RuleChains\\" : [ "src/", "tests/" ]
+        }
+    }
+}
