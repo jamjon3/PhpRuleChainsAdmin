@@ -30,7 +30,7 @@ try {
             "executeType" => "ROW",
             "rule" => "SELECT 1 FROM DUAL"
         ]
-    ]);
+    ],[],true);
     
 } catch (Exception $ex) {
 
