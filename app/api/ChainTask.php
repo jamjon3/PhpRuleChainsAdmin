@@ -13,7 +13,7 @@ namespace CF\RuleChains;
  *
  * @author james
  */
-class ChainTask extends \CF\RuleChains\RuleChainTask {
+class ChainTask extends RuleChainTask {
     //put your code here
     public function run() {
         $this->setOutput(\call_user_func_array(function($chain) {
@@ -22,7 +22,7 @@ class ChainTask extends \CF\RuleChains\RuleChainTask {
                 \array_push($result, $row);
             }
             return $result;
-        }, [ new \CF\RuleChains\Chain($this->getConnectionConfig(),[
+        }, [ new Chain($this->getConnectionConfig(),[
             [
                 "type" => "SQL",
                 "name" => "localhost",
