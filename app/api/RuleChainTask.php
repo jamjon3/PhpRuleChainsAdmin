@@ -24,7 +24,7 @@ abstract class RuleChainTask extends \pmill\Scheduler\Task\Task {
     /**
      * @var string
      */
-    protected $chainName;
+    protected $chain;
     /**
      * @var array
      */
@@ -47,20 +47,20 @@ abstract class RuleChainTask extends \pmill\Scheduler\Task\Task {
         return $this->input;
     }
     /**
-     * Sets the chainName for the task
-     * @param string $chainName
+     * Sets the chain for the task
+     * @param string $chain
      * @return RuleChainTask
      */
-    public function setChainName($chainName) {
-        $this->chainName = $chainName;
+    public function setChain($chain) {
+        $this->chain = $chain;
         return $this;
     }
     /**
-     * Gets the chain name for the task
+     * Gets the chain for the task
      * @return string
      */
-    public function getChainName() {
-        return $this->chainName;
+    public function getChain() {
+        return $this->chain;
     }
     /**
      * Sets the connection array for the chain to be executed
