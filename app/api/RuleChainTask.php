@@ -48,7 +48,7 @@ abstract class RuleChainTask extends \pmill\Scheduler\Task\Task {
     }
     /**
      * Sets the chain for the task
-     * @param string $chain
+     * @param array $chain
      * @return RuleChainTask
      */
     public function setChain($chain) {
@@ -57,7 +57,7 @@ abstract class RuleChainTask extends \pmill\Scheduler\Task\Task {
     }
     /**
      * Gets the chain for the task
-     * @return string
+     * @return array
      */
     public function getChain() {
         return $this->chain;
